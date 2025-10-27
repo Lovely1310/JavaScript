@@ -13,6 +13,7 @@ if(mode == "dark"){
 if(mode =="light"){
     color="WHITE";
 }
+
 console.log(color);
 
 // // // if else statement'

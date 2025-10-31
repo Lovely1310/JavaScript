@@ -7,10 +7,9 @@ function avg(a , b,c){
     return a+b+c;
 }
 avg(10,20,10);
+ 
+//  FUNCTIONS IN JAVASCRIPT
 
-// ===============================
-// 🌟 FUNCTIONS IN JAVASCRIPT
-// ===============================
 
 // 🔹 1️⃣ Function Declaration
 // A simple function that adds two numbers and returns the result.

@@ -1,0 +1,12 @@
+h1{
+    color: aqua;
+    background-color: hotpink;
+    text-decoration: double;
+}
+
+button{
+    background-color: black;
+    font-style: inherit;
+    color: red;
+
+}

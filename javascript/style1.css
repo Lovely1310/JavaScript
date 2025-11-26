@@ -1,0 +1,38 @@
+/* universal selector */
+*{
+    margin: 10px;
+    padding: 20px;
+     box-sizing: border-box;
+
+}
+p{
+    color: blue;
+}
+/* class selector */
+.btn{
+    color: aquamarine;
+    background-color: black;
+}
+/* id selector */
+#lovely{
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    color: blueviolet;
+    text-decoration: double;
+}
+/* group selector */
+h1,h2{
+    font-style: italic;
+}
+.child-box > p {
+    color: green;
+    font-weight: bold;
+}
+a:hover {
+    color: red;
+    font-size: 20px;
+}
+input[type="text"] {
+    border: 2px solid orange;
+    padding: 5px;
+}

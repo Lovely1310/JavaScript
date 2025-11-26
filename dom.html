@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <tittle> Document Object Model</tittle>
+    </head>
+    <body>
+        <h1 id="heading"> DOM with Js</h1>
+        <p id="para"> hello guys i am monika saini . Now i am learning Java script.</p>
+
+    <button onclick="changetext()"> Change Text </button>
+    <script>
+        function changetext(){
+            document.getElementById("heading").style.color ="red";
+            document.getElementById("para").innerHTML =  "content of pareagraph changed";
+            let newpara = document.createElement("p");
+            newpara.innerHTML = "this is a new para";
+            document.body.appendChild(newpara);  // append new paragraph
+        }
+    </script>
+    </body>
+</html>

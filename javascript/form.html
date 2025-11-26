@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        p{
+            color: red;
+            background-color: black;
+            text-align: center;
+        }
+        h1{
+            color: aqua;
+            background-color: black;
+        }
+    </style>
+    <!-- 1st priority -- inline CSS 
+    2nd priority -- Internal css
+    3rd priority -- External CSS 
+    The rule that comes last in the source code wins, even if it's external.-->
+    <link rel="stylesheet" href="form.css">
+
+</head>
+<body> <!--style="color: blue; background-color:hotpink; font-size :50px;" for inline css -->
+    <h1 > HTML Form </h1>
+    <form>
+        <label> Name - </label>
+        <input type="text" name="myname"    placeholder="Enter your Name Dear"> <br> <br>
+         <label> Password - </label>
+        <input type="password" name="myname"    placeholder="Enter your Password Dear"> <br> <br>
+    <label>Email - </label> 
+    <input type="email" placeholder="Enter Your Email Id"> <br> <br>
+    <label> Age - </label>
+        <input type="number" placeholder="Enter Your age "> <br> <br>
+        <label> Select Date - </label>
+    <input type="date" > <br> <br>
+
+     <label> Gender - </label>
+         <input type="radio"  name="gender" value="Male"> Male 
+         <input type="radio"  name="gender" value="Female"> Female 
+                   <input type="radio"  name="gender" value="other"> Other 
+<br> <br>
+<label> Upload File - </label>
+         <input type="file" > <br> <br>
+         <label>
+            volume - 
+         </label>
+         <input type="range" min="0" max="100"> <br> <br>
+          <label>Your Website:</label>
+        <input type="url" placeholder="https://example.com"> <br><br>
+
+        
+        <label>Search:</label>
+        <input type="search" placeholder="Search something"> <br><br>
+
+
+        <button type="submit">Submit</button>
+
+    </form>
+    <p> Thank You for visiting our Website </p>
+
+</body>
+</html>

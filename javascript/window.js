@@ -5,3 +5,4 @@ console.log("hello");
 console.log(window);
 window.console.log("hello2");
 window.alert("focus monika")
+

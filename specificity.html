@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Css specificity & Css Inheritance</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;   /* Inherited */
+            color: darkblue;                  /* Inherited */
+            background-color: #f2f2f2;        /* NOT inherited */
+        }
+        p{
+            border: 2px solid red;
+        }
+        .demo{
+border: 3px solid black;
+        }
+        #unique{
+            font-family: 'Times New Roman', Times, serif;
+            border: 4px solid salmon;
+        }
+      
+     
+    </style>
+</head>
+<body>
+    <h1> Css specificity & Css inheritance </h1>
+    <!-- css inheritance -->
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+
+    </div>
+    <hr>
+    <!-- css specificity -->
+    <p> this is a element selector </p>
+    <h2> Lorem ipsum dolor sit.</h2>
+    <h3 class="demo"> this is a class 
+
+    </h3>
+    <p id="unique"> this is a id selector </p>
+        <p style="color: red"> this is a inline css </p>
+
+</body>
+</html>

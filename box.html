@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Box & content Box</title>
+    <style>
+        .box1{
+            width: 700px;
+            height: 400px;
+            padding : 20px;    
+      /* Total Width = 700px only */
+            margin : 20px;
+            background-color: aqua;
+            box-sizing: border-box;
+        }
+         .box2{
+            width: 700px;
+            height: 400px;
+            padding : 20px;    
+             /* Total Width = 700 + 20px left padding + 20px right padding = 740px */
+            margin : 20px;
+            background-color: hotpink;
+            box-sizing: content-box;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box1"> Border Box -- it includes total size = height + width+ padding</div>
+    <div class="box2"> content Box-- height & width only apply to the content </div>
+    
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            background-color: aquamarine;
+        }
+        header{
+            background-color: #333;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+        }
+         nav {
+            background: #444;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            
+        }
+        .container{
+            display: flex;
+            gap:20px;
+            flex-wrap: wrap;
+            padding: 20px;
+
+        }
+        .box {
+            background: white;
+            padding: 20px;
+            flex: 1 1 300px; /* Responsive width */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        @media(max-width :768px){
+            header{
+                font-size: 20px;
+            }
+            nav a {
+                padding: 10px;
+            }
+        }
+        @media(max-width :480px){
+            nav {
+                flex-direction: column;
+                text-align: center;
+            }
+.box {
+                flex: 1 1 100%;  /* Full width on mobile */
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+         <h1> Responsive website</h1>
+    </header>
+    <naV>
+        <a href="#"> Home </a>
+         <a href="#"> Service </a>
+        <a href="#"> Contact </a>
+        <a href="#"> About us </a>
+    </naV>
+    <div class="container">
+        <div class="box">
+            <h2> About Us</h2>
+            <p> this is a responsive Website layout </p>
+        </div>
+   
+    <div class="box">
+            <h2>Our Services</h2>
+            <p>All sections are flexible using flexbox. On small screens, boxes come one below another.</p>
+        </div>
+        <div class="box">
+            <h2>Contact Info</h2>
+            <p>You can add email, phone number, or any contact details in this section.</p>
+        </div>
+        </div>
+         <footer>
+        <p>Copyright © 2025 | Designed by You</p>
+    </footer>
+</body>
+</html>
+
+<!-- Less & Sass Css preprocessor
+SASS Example
+sass variable
+$primary color: blue;
+h1{
+    color : $primary color;
+}
+SASS Nesting
+nav {
+  background: #333;
+
+  ul {
+    li {
+      a {
+        color: white;
+      }
+    }
+  }
+}
+Sass Mixins
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  @include center;
+  height: 100px;
+}
+---------------------
+LESS Example
+LESS Variable
+@primary: red;
+
+h1 {
+  color: @primary;}
+  LESS Nesting
+nav {
+  background: #444;
+
+  ul {
+    li {
+      a {
+        color: yellow;
+      }
+    }
+  }
+}
+LESS Mixin
+.center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  .center();
+} 
+  SASS and LESS are CSS preprocessors that allow developers to write cleaner, reusable, modular, and more powerful CSS code. They support variables, nesting, mixins, and functions, making CSS development faster and more efficient.
+  -->

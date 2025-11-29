@@ -46,3 +46,18 @@ function test() {
 }
 test();
 console.log(name);            // Output: Global Name
+// --------------------------------------------------------------------------------------------
+
+//Scope Chain -- When JavaScript cannot find a variable in the current scope, it moves upward step by step until it finds the variable.
+let b = "logical thinking";
+function first(){
+    let a = 10;
+    function second(){
+        let c = 30;
+        console.log(a)
+        console.log(b);
+        console.log(c);
+    }
+    second();
+}
+first();

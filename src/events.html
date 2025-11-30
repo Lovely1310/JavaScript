@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in Javascript</title>
+</head>
+<body>
+    <h2> Javascript Events </h2>
+    <button id="btn"> Click Me </button>
+    <div
+ id="mouse" style="width:100px; height:200px; background-color:lightgreen; margin:20px;">
+    Move your Mouse here 
+    </div>
+    <script>
+        document.getElementById("btn").addEventListener("click" , function(){
+            console.log("button Clicked")
+        })
+         
+        let moveBox = document.getElementById("mouse");
+
+        moveBox.addEventListener("mousemove", function(event){
+            console.log("Mouse X:", event.clientX, "Mouse Y:", event.clientY);
+        });
+    </script>
+
+    
+</body>
+</html>>
